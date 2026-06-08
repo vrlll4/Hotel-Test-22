@@ -1,0 +1,205 @@
+/* ألوان الفندق الفخمة والتنسيق العام */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* خلفية زرقاء داكنة فخمة */
+    color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* شريط التنقل العلوي (الهيدر) */
+.nav-bar {
+    background-color: #1e293b;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #38bdf8; /* خط أزرق مضيء */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.nav-bar h2 {
+    color: #38bdf8;
+    font-size: 24px;
+}
+
+.nav-btn {
+    background-color: #0284c7;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #0369a1;
+}
+
+/* الحاوية الرئيسية للمحتوى */
+.container {
+    background-color: #1e293b;
+    max-width: 480px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border: 1px solid #334155;
+}
+
+/* الحاوية الكبيرة لصفحة الغرف */
+.container.large {
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+p {
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+/* المدخلات والقوائم */
+label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    color: #cbd5e1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #475569;
+    background-color: #0f172a;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #38bdf8;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+/* الأزرار الفخمة */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #0ea5e9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #0284c7;
+}
+
+/* شبكة كروت الغرف المنسقة */
+.rooms-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.room-card {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    width: 280px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.room-card img {
+    width: 100%;
+    height: 160px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    background-color: #334155; /* خلفية مؤقتة لو الصورة ما حملت */
+}
+
+.room-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #f1f5f9;
+}
+
+.price {
+    color: #38bdf8;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* معلومات التواصل الأسفل */
+.footer-info {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #334155;
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* رسالة نجاح الحجز */
+.success-box {
+    background-color: #10b981;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+.nav-links {
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+.nav-links a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+font-size: 16px;
+}
+
+.nav-links a:hover {
+color: #38bdf8;
+}
